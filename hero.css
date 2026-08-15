@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(to left ,rgb(47, 5, 71),rgb(248, 247, 247));
+}
+
+.rita img{
+    float: left;
+    border-radius: 50%;
+    margin-right: 60px;
+    margin-top: 30px;
+    width: 300px;
+}
+p{
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.innodiv{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+nav{
+    background-color: black;
+}
+
+ li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+    padding-left: 50px;
+    
+
+}
+li a{
+    font-size: 25px;
+    font-weight: 25;
+    color: brown;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+}
+.box{
+    background-color:brown;
+    height: 200px;
+    padding: 20px;
+    width: 200px;
+    margin-top: 20%;
+}
+.container{
+    display:inline-block ;
+    text-align: center;
+    justify-content: space-between;
+}
+.tab1{
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+.tab1 th{
+    font-size:20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tab1 td{
+    padding: 20px;
+    color: aliceblue;
+
+}
+.tab2{
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+.tab2 th{
+    font-size:20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tab2 td{
+    padding: 20px;
+    color: aliceblue;
+}
+
+.tab3{
+    border: 2px solid brown;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+.tab3 th{
+    font-size:20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tab3 td{
+    padding: 20px;
+    color: aliceblue;
+    
+}
+
+
+.set{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+button{
+    color: white;
+    background-color: black;
+
+}
+
+
