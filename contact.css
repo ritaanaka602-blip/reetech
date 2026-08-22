@@ -1,0 +1,625 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: #ffffff;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+================================ */
+
+.navbar {
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: black;
+}
+
+.logo h2 span {
+    color: purple;
+}
+
+
+/* Simple logo shape */
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: purple;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+
+    position: relative;
+}
+
+.logo-icon::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: black;
+    top: 13px;
+    left: 13px;
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+}
+
+
+/* NAVIGATION LINKS */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:purple;
+}
+
+nav a.active {
+    color: purple;
+
+    border-bottom: 2px solid purple;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    height: 270px;
+
+    background-color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Orange decoration on left */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: purple;
+    transform: skewX(30deg);
+}
+
+
+/* Hero text */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-line {
+    width: 55px;
+    height: 3px;
+    background: purple;
+    margin: 0 auto 18px;
+}
+
+.hero p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+.contact-section {
+    padding: 45px 4%;
+    background: purple;
+}
+
+.contact-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+
+    gap: 28px;
+}
+
+
+.contact-info {
+    padding: 25px 22px;
+    background: white;
+    box-shadow:
+        0 3px 15px black;
+    border-radius: 5px;
+}
+
+.title {
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.small-line {
+    width: 52px;
+    height: 3px;
+    background: purple;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #202020;
+
+    margin-bottom: 20px;
+}
+
+
+
+.info-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background:purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0px;
+}
+
+.info-box h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 13px;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow:
+        0 3px 15px black;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.contact-form .small-line {
+    margin-bottom: 22px;
+}
+
+
+form label {
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: black;
+}
+
+
+.input-box {
+    height: 38px;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    margin-bottom: 16px;
+}
+
+.input-box span {
+    color: #aaa;
+
+    margin-right: 10px;
+}
+
+.input-box input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+
+
+.textarea-box {
+    height: 110px;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+}
+
+.textarea-box span {
+    color: #aaa;
+
+    margin-right: 10px;
+}
+
+.textarea-box textarea {
+    width: 100%;
+    height: 90px;
+
+    border: none;
+
+    outline: none;
+
+    resize: none;
+
+    font-family: Arial;
+
+    font-size: 13px;
+}
+
+
+
+
+button {
+    width: 100%;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: purple;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: purple;
+}
+
+
+/* ================================
+   SOCIAL MEDIA
+================================ */
+
+.social-section {
+    background: #f5f6fa;
+
+    text-align: center;
+
+    padding: 20px 5% 25px;
+}
+
+.social-section h2 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.social-line {
+    width: 35px;
+    height: 3px;
+
+    background: purple;
+
+    margin: 0 auto 25px;
+}
+
+.social-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* Social colors */
+
+.facebook {
+    background: black;
+}
+
+.instagram {
+    background: black;
+}
+
+.linkedin {
+    background: black;
+}
+
+.x {
+    background: black;
+}
+
+.whatsapp {
+    background: black;
+}
+
+
+
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+.footer-logo h2 {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.footer-logo h2 span {
+    color: purple;
+}
+
+.footer-logo p {
+    font-size: 12px;
+    font-style: normal;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.copyright span {
+    color: purple;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-container {
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 230px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .hero p br {
+        display: none;
+    }
+
+    .contact-section {
+        padding: 25px 15px;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .social-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+}
